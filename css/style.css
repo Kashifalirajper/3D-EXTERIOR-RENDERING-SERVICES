@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
 /*scrollbar theme*/
@@ -10093,24 +10096,24 @@ a{
 
   #gallery {
 	line-height:0;
-	-webkit-column-count:5; /* split it into 5 columns */
-	-webkit-column-gap:5px; /* give it a 5px gap between columns */
-	-moz-column-count:5;
-	-moz-column-gap:5px;
-	column-count:5;
-	column-gap:5px;
+	-webkit-column-count:4; /* split it into 5 columns */
+	-webkit-column-gap:10px; /* give it a 5px gap between columns */
+	-moz-column-count:4;
+	-moz-column-gap:10px;
+	column-count:4;
+	column-gap:10px;
  }
 
  #gallery img {
 	width: 100% !important;
 	height: auto !important;
-	margin-bottom:5px; /* to match column gap */
-	filter: grayscale(100%);
-	transition: filter 1s;
+	margin-bottom:10px; /* to match column gap */
+	transform-origin: 50% 50%;
+  transition: transform 1s ease-out;
  }
 
  #gallery img:hover {
-	filter:none;
+	transform: scale(0.9);
  }
 
  @media (max-width: 1200px) {
@@ -10144,3 +10147,99 @@ a{
 	 column-count:         1;
 	}
  }
+
+
+ 
+.iconsCards{
+	float: left;
+	width: 40%;
+	height: 156px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px 0px 15px -5px rgb(0 0 0 / 50%);
+	margin: 20px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 523px) {
+	.iconsCards{
+		width: 90%;
+		height: 156px;
+		padding: 20px;
+		text-align: center;
+		box-shadow: 0px 0px 15px -5px rgb(0 0 0 / 50%);
+		border-radius: 10px;	
+	}
+  }
+
+.iconsCards i{
+	font-size: 50px;
+	color: #EA6A69;
+}
+
+.iconHeading{
+	color: #EA6A69;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.cardSmartTouch{
+	border-radius: 20px!important;
+}
+
+
+.cardSmartTouchText{
+	background-color: #161719!important;
+	border-radius: 20px!important;
+	padding: 25px 20px;
+	height: 335px;
+}
+
+.cardSmartTouchTextHeading{
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 39px;
+	color: #FFFFFF;
+
+}
+
+.cardSmartTouchTextDescription{
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 41px;
+	color: #FFFFFF;
+}
+
+.headingAboutSec{
+	font-family: 'Baloo Bhaina 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #142432;
+	text-transform: uppercase;
+}
+
+.advantagesList{
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000;
+	text-align: justify;
+	list-style-type: disc;
+}
+
+.cardSmartTouchA{
+	border: none!important;
+	border-radius: 20px!important;
+	padding: 20px;
+}
+
+::marker{
+	font-size: 20px;
+}
